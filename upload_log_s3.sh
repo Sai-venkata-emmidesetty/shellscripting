@@ -28,7 +28,7 @@ fi
 aws s3 cp "$zip_file" "$s3_link"
 
 if[ $? -eq 0 ]; then
-    echo "upload successfull!!"
+    echo "upload successfullyyy!!"
 fi
 
 echo "removing the log files from system"
