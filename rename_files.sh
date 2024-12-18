@@ -26,3 +26,20 @@ fi
 # -------------------------------------------------------------------
 # -e checks if the file exists in the directory
 #--------------------------------------------------------------------
+
+#${file%.jpg}:
+
+
+#The syntax ${variable%pattern} removes the shortest match of the specified pattern (.jpg in this case) from the end of the value stored in file.
+#For example:
+      #If file="image.jpg", then ${file%.jpg} evaluates to image.
+      #If file="picture.jpg", then ${file%.jpg} evaluates to picture.
+#.jpeg:
+
+      #This is the new extension added to the filename after .jpg is removed.
+#"${file%.jpg}.jpeg":
+
+      #Combines the base filename (with .jpg removed) with the new .jpeg extension.
+#For example:
+      #If file="image.jpg", this evaluates to image.jpeg.
+
